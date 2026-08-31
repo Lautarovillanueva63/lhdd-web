@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOS HIJOS DEL DUEÑO — Sitio oficial</title>
+  <meta name="description" content="Sitio oficial de Los Hijos del Dueño.">
+
+  <!-- Display para el wordmark con efecto de sombra + una manuscrita para el banner de lanzamiento + Inter para el cuerpo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============ NAV ============ -->
+  <!-- Arranca grande (sobre la foto del hero) y se achica solo al scrollear: mirá script.js -->
+  <header class="nav" id="nav">
+    <nav class="nav__links">
+      <a href="#inicio" class="nav__link" data-nav>Inicio</a>
+      <span class="nav__sep">/</span>
+      <a href="#discografia" class="nav__link" data-nav>Discografía</a>
+      <span class="nav__sep">/</span>
+      <a href="#nosotros" class="nav__link" data-nav>Quienes Somos</a>
+      <span class="nav__sep">/</span>
+      <a href="#tienda" class="nav__link" data-nav>Tienda Oficial</a>
+      <span class="nav__sep">/</span>
+      <a href="#contacto" class="nav__link" data-nav>Contactanos</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. INICIO ============ -->
+    <section id="inicio" class="section hero">
+      <!-- TODO: pegar acá la foto de la banda (la del muro con el logo pintado) -->
+      <div class="hero__bg" style="background-image:url('img/hero-banda.jpg');"></div>
+      <div class="hero__overlay"></div>
+
+      <h1 class="hero__wordmark">
+        <span>LOS HIJOS</span>
+        <span>DEL DUEÑO</span>
+      </h1>
+    </section>
+
+    <!-- ============ BANNER ÚLTIMO LANZAMIENTO ============ -->
+    <!-- Todo el bloque es un link a YouTube. TODO: cambiar el href cada vez que saquen algo nuevo -->
+    <a href="#" class="lanzamiento" data-youtube target="_blank" rel="noopener">
+      <!-- TODO: pegar acá la foto/still del videoclip -->
+      <div class="lanzamiento__bg" style="background-image:url('img/lanzamiento.jpg');"></div>
+      <div class="lanzamiento__overlay"></div>
+      <p class="lanzamiento__nombre">Hoy Es Hoy</p>
+      <span class="lanzamiento__play">▶ Ver videoclip</span>
+    </a>
+
+    <!-- ============ 2. DISCOGRAFÍA ============ -->
+    <section id="discografia" class="section discografia">
+      <h2 class="section__title">Discografía</h2>
+
+      <div class="discos">
+
+        <!-- Repetir este bloque .disco por cada álbum/single -->
+        <article class="disco">
+          <!-- TODO: reemplazar por la tapa del disco -->
+          <div class="disco__cover" style="background-image:url('img/disco-1.jpg');"></div>
+          <div class="disco__info">
+            <h3 class="disco__nombre">Buscando algun lio (2025)</h3>
+            <p class="disco__desc">Buscando algún lío es el nuevo single de Los Hijos del Dueño.
+              Rock clásico, guitarras al frente y canciones hechas para durar.
+            </p>
+            <p>
+              Si creciste escuchando rock y todavía buscás temas nuevos que no suenen descartables, este es para vos.
+            </p>
+            <!-- TODO: link a Spotify/Bandcamp del disco -->
+            <a href="https://www.youtube.com/watch?v=JgFoI1syq1Q" class="disco__link">Escuchar →</a>
+          </div>
+        </article>
+
+        <article class="disco">
+          <div class="disco__cover" style="background-image:url('img/disco-2.jpg');"></div>
+          <div class="disco__info">
+            <h3 class="disco__nombre">La cuadra de mi casa (2026)</h3>
+            <p class="disco__desc">“La Cuadra de Mi Casa” es una canción sobre lo cotidiano, sobre caminar sin apuro y
+              dejar que el día se acomode solo.
+            </p>
+            <p>
+              Habla de esas cosas simples que no tienen explicación, pero te sacan una sonrisa: el barrio, la calle
+              conocida, el momento justo.
+            </p>
+            <p>
+              Si alguna vez una caminata te cambió el humor, este tema es para vos.</p>
+            <a href="#" class="disco__link">Escuchar →</a>
+          </div>
+        </article>
+
+        <article class="disco">
+          <div class="disco__cover" style="background-image:url('img/disco-3.jpg');"></div>
+          <div class="disco__info">
+            <h3 class="disco__nombre">Noches ciegas (2026)</h3>
+            <p class="disco__desc">Noches Ciegas habla del momento en que todo empieza a romperse: la calle, los
+              vínculos, la idea de futuro.
+            </p>
+            <p>
+              Por eso el video reúne imágenes de colapso social en Argentina, no como fondo sino como parte del corazón
+              de la canción. Con un riff de guitarra poderoso y una energía frontal, la canción no busca decorar el
+              caos: busca meterse adentro.
+            </p>
+            <a href="https://www.youtube.com/watch?v=lhLIeSfkjSg&list=RDlhLIeSfkjSg&start_radio=1"
+              class="disco__link">Escuchar →</a>
+          </div>
+        </article>
+
+        <article class="disco">
+          <div class="disco__cover" style="background-image:url('img/disco-4.jpg');"></div>
+          <div class="disco__info">
+            <h3 class="disco__nombre">Hoy es Hoy (2026)</h3>
+            <p class="disco__desc">Hoy es Hoy es una canción sobre volver al único lugar que realmente tenemos: el
+              presente.
+            </p>
+            <p>
+
+              Sobre esos momentos en los que todo parece pesar demasiado, el futuro se vuelve incierto y necesitamos
+              recordar algo simple: todavía estamos acá. Y mientras estemos acá, nos tenemos a nosotros mismos.
+            </p>
+            <p>
+              A veces no podemos cambiar lo que pasó. Tampoco sabemos qué viene después. Pero podemos elegir qué hacer
+              con este momento.
+            </p>
+            <p>
+              Hoy es hoy. Y eso alcanza para volver a empezar.
+              .</p>
+            <a href="https://www.youtube.com/watch?v=X3K3ikv08H0&list=RDX3K3ikv08H0&start_radio=1"
+              class="disco__link">Escuchar →</a>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- ============ 3. QUIENES SOMOS ============ -->
+    <section id="nosotros" class="section nosotros">
+      <div class="nosotros__texto">
+        <h2 class="section__title">Quienes Somos</h2>
+        <p>Somos Los Hijos del Dueño: rock hecho a mano, con historia, riffs que se quedan y letras que hablan de lo que
+          vivimos —amistades que se rompen, amores que vuelven, el laburo, la noche, el paso del tiempo.
+
+        </p>
+        <p>
+
+          Crecimos escuchando discos —de los que se rayan, de los que se escuchan enteros— y nos gusta grabar canciones
+          que puedan acompañarte en el auto, en un viaje largo o en un día complicado.
+        </p>
+        <p>
+
+          En este canal vas a encontrar música, sesiones en vivo, backstage, borradores, aciertos y tropiezos.
+          Todo lo que pasa cuando una banda elige tomarse el rock en serio… y disfrutarlo.
+        </p>
+        <p>
+          Rock para la vida.
+          Canciones que caminan por adentro.</p>
+        <p>Villa Pueyrredon</p>
+      </div>
+
+      <!-- TODO: reemplazar por foto grupal de la banda -->
+      <div class="nosotros__foto" style="background-image:url('img/banda.jpg');"></div>
+
+      <div class="integrantes">
+        <!-- Repetir por cada integrante -->
+        <div class="integrante">
+          <div class="integrante__foto" style="background-image:url('img/integrante-1.jpg');"></div>
+          <p class="integrante__nombre">Juan Mezita</p>
+          <p class="integrante__rol">Cantante</p>
+        </div>
+        <div class="integrante">
+          <div class="integrante__foto" style="background-image:url('img/integrante-2.jpg');"></div>
+          <p class="integrante__nombre">Francisco guarnuccio</p>
+          <p class="integrante__rol">Guitarrista</p>
+        </div>
+        <div class="integrante">
+          <div class="integrante__foto" style="background-image:url('img/integrante-3.jpg');"></div>
+          <p class="integrante__nombre">Gaspar Taboada</p>
+          <p class="integrante__rol">Guitarrista</p>
+        </div>
+        <div class="integrante">
+          <div class="integrante__foto" style="background-image:url('img/integrante-4.jpg');"></div>
+          <p class="integrante__nombre">Agustin Taboada</p>
+          <p class="integrante__rol">Tecladista</p>
+        </div>
+        <div class="integrante">
+          <div class="integrante__foto" style="background-image:url('img/integrante-5.jpg');"></div>
+          <p class="integrante__nombre">Lautaro Villanueva</p>
+          <p class="integrante__rol">Bajista</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. TIENDA OFICIAL ============ -->
+    <section id="tienda" class="section tienda">
+      <h2 class="section__title section__title--boxed">Tienda Oficial</h2>
+
+      <!--
+      Grilla de 8 prendas. Cada .producto tiene data-nombre / data-precio / data-talles / data-cuotas / data-img
+      que el script.js lee para armar el modal al hacer click. Para agregar o sacar una prenda,
+      copiá/borrá un bloque <article class="producto"> completo.
+    -->
+      <div class="productos">
+
+        <article class="producto" data-nombre="Remera de los hijos" data-precio="$ 20.000" data-talles="S M L"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-1.jpg">
+          <!-- TODO: foto del producto 1 -->
+          <div class="producto__foto" style="background-image:url('img/producto-1.jpg');"></div>
+          <p class="producto__nombre">Remera De Los Hijos</p>
+          <p class="producto__precio">$ 20.000</p>
+          <p class="producto__detalle">Talles: S M L</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Remera de los hijos" data-precio="$ 20.000" data-talles="S M L"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-2.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-2.jpg');"></div>
+          <p class="producto__nombre">Remera Transa</p>
+          <p class="producto__precio">$ 20.000</p>
+          <p class="producto__detalle">Talles: S M L</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Remera de los hijos" data-precio="$ 20.000" data-talles="S M L"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-3.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-3.jpg');"></div>
+          <p class="producto__nombre">Remera Fran Papa</p>
+          <p class="producto__precio">$ 20.000</p>
+          <p class="producto__detalle">Talles: S M L</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Buzo de los hijos" data-precio="$ 32.000" data-talles="S M L XL"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-4.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-4.jpg');"></div>
+          <p class="producto__nombre">Buzo Hoy es hoy</p>
+          <p class="producto__precio">$ 32.000</p>
+          <p class="producto__detalle">Talles: S M L XL</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Gorra de los hijos" data-precio="$ 15.000" data-talles="Único"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-5.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-5.jpg');"></div>
+          <p class="producto__nombre">Gorra de los hijos</p>
+          <p class="producto__precio">$ 15.000</p>
+          <p class="producto__detalle">Talles: Único</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Remera de los hijos" data-precio="$ 20.000" data-talles="S M L"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-6.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-6.jpg');"></div>
+          <p class="producto__nombre">Remera Noches Ciegas</p>
+          <p class="producto__precio">$ 20.000</p>
+          <p class="producto__detalle">Talles: S M L</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Vinilo Hoy Es Hoy 3" data-precio="$ 28.000" data-talles="—"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-7.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-7.jpg');"></div>
+          <p class="producto__nombre">Vinilo Hoy Es Hoy </p>
+          <p class="producto__precio">$ 28.000</p>
+          <p class="producto__detalle">Talles: —</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+        <article class="producto" data-nombre="Buzo de los hijos" data-precio="$ 32.000" data-talles="S M L XL"
+          data-cuotas="3 cuotas sin interés" data-img="img/producto-8.jpg">
+          <div class="producto__foto" style="background-image:url('img/producto-8.jpg');"></div>
+          <p class="producto__nombre">Vinilo Noches Ciegas</p>
+          <p class="producto__precio">$ 32.000</p>
+          <p class="producto__detalle">Talles: S M L XL</p>
+          <p class="producto__detalle">3 cuotas sin interés</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ 5. CONTACTANOS ============ -->
+    <section id="contacto" class="section contacto">
+      <h2 class="section__title">Contactanos</h2>
+
+      <div class="contacto__grid">
+        <div class="contacto__bloque">
+          <h3>Contrataciones</h3>
+          <!-- TODO: mail y teléfono reales -->
+          <p><a href="mailto:contacto@lhdd.com">contacto@lhdd.com</a></p>
+          <p>+54 9 11 ---- ----</p>
+        </div>
+
+        <div class="contacto__bloque">
+          <h3>Redes</h3>
+          <!-- TODO: pegar los links reales de cada red -->
+          <p><a href="#" data-red="instagram">Instagram</a></p>
+          <p><a href="#" data-red="spotify">Spotify</a></p>
+          <p><a href="#" data-red="youtube">YouTube</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <img src="img/logo.png" alt="Los Hijos del Dueño" class="footer__logo">
+    <p>© <span id="year"></span> Los Hijos del Dueño</p>
+  </footer>
+
+  <!-- ============ MODAL DE PRODUCTO (visual, sin lógica de compra) ============ -->
+  <div class="modal" id="modal">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__caja">
+      <button class="modal__cerrar" id="modalCerrar" aria-label="Cerrar">✕</button>
+      <div class="modal__foto" id="modalFoto"></div>
+      <div class="modal__info">
+        <h3 id="modalNombre">Nombre</h3>
+        <p id="modalPrecio">$ ----</p>
+        <p id="modalTalles">Talles: —</p>
+        <p id="modalCuotas">—</p>
+        <button class="modal__carrito" id="modalCarrito">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
